@@ -2,11 +2,11 @@
   <div>
     <Header />
     <Master />
-    <button v-on:click="say('accueil')">accueil</button>
+    <button v-on:click="say('accueil')">Accueil</button>
     <!-- <button v-on:click="say('formulaire')">formulaire</button> -->
-    <button v-on:click="say('apropos')">apropos</button>
-    <button v-on:click="say('mentionLegale')">mentionLegale</button>
-    <button v-on:click="say('connexion')">connexion</button>
+    <button v-on:click="say('apropos')">A propos</button>
+    <button v-on:click="say('mentionLegale')">Mention Legale</button>
+    <button v-on:click="say('connexion')">Connexion</button>
 
     <Accueil v-if="pageMenu == 'accueil'" />
     <Formulaire v-if="pageMenu == 'formulaire'" />
@@ -41,6 +41,14 @@ export default {
     Footer,
   },
 
+  beforeCreate() {
+   function alertplop() {
+      alert('Plop')
+    }
+    setInterval(alertplop, 10000);
+    /* clearInterval(alert); */
+  },
+
   computed: {
     ...mapState(['pseudo']),
   },
@@ -55,7 +63,7 @@ export default {
     say: function (message) {
       this.pageMenu = message
     },
-    },
+  },
 }
 </script>
 
