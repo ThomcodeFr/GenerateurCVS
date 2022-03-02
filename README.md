@@ -30,3 +30,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 3. Généré le rendu final
 4. Bonus : créer un formulaire générique qui se prérempli à l'aide des props :p
 # GenerateurCVS
+
+Ajouter un plop au démarrage de l'application

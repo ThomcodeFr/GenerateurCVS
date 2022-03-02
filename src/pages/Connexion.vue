@@ -17,6 +17,7 @@ export default {
       password: '',
     }
   },
+
   methods: {
     ...mapMutations(['setPseudo']),
     ...mapMutations(['setPassword']),
